@@ -1,0 +1,44 @@
+<div
+  class="nav-mobile-container"
+  [@navBackgroundAnimation]="menuOpen ? 'open' : 'closed'"
+>
+  <div class="logo-hamburger-container">
+    <img
+      [@logoColorAnimation]="menuOpen ? 'open' : 'closed'"
+      src="/assets/Yahia-logo.png"
+      alt=""
+      class="logo-hamburger-container__logo-image
+      "
+    />
+    <button class="hamburger-toggle-btn" (click)="toggleMenu()">
+      <span
+        class="hamburger-toggle-btn__bar"
+        [@bar1Animation]="menuOpen ? 'open' : 'closed'"
+      ></span>
+      <span
+        class="hamburger-toggle-btn__bar"
+        [@bar2Animation]="menuOpen ? 'open' : 'closed'"
+      ></span>
+    </button>
+  </div>
+
+  <nav
+    [@menuAnimation]="menuOpen ? 'open' : 'closed'"
+    class="nav-mobile-list-container"
+  >
+    <ul class="nav-mobile-list">
+      <li class="nav-mobile-list__item">
+        <a href="#" class="nav-mobile-list__link">About</a>
+      </li>
+      <li class="nav-mobile-list__item">
+        <a href="#" class="nav-mobile-list__link">Services</a>
+      </li>
+      <li class="nav-mobile-list__item">
+        <a href="#" class="nav-mobile-list__link">Projects</a>
+      </li>
+      <li class="nav-mobile-list__item">
+        <a href="#" class="nav-mobile-list__link">Contact</a>
+      </li>
+    </ul>
+  </nav>
+</div>

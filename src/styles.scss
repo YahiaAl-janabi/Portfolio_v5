@@ -1,15 +1,51 @@
 /* You can add global styles to this file, and also import other style files */
 
-@font-face {
-  font-family: "FiraCode";
-  src: url("/fonts/FiraCode-VariableFont_wght.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
+// @font-face {
+//   font-family: "FiraCode";
+//   src: url("/assets/fonts/FiraCode-VariableFont_wght.ttf") format("truetype");
+//   font-weight: normal;
+//   font-style: normal;
+// }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "FiraCode", monospace;
+  // font-family: "FiraCode", monospace;
+  font-family: "Open Sans", sans-serif;
+  color: rgb(218, 244, 255);
+}
+
+html {
+  background-image: radial-gradient(
+    circle,
+    #000112,
+    #00010f,
+    #00000b,
+    #000006,
+    #000002
+  );
+  // background-image: linear-gradient(
+  //   to left bottom,
+  //   #000112,
+  //   #00010f,
+  //   #00000b,
+  //   #000006,
+  //   #000002
+  // );
+  background-image: radial-gradient(
+    circle,
+    #000009,
+    #000009,
+    #000009,
+    #000008,
+    #000008,
+    #000008,
+    #000007,
+    #000007,
+    #000006,
+    #000006,
+    #000005,
+    #000004
+  );
 }
