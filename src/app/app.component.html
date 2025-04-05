@@ -1,4 +1,8 @@
 <body class="app-html-container">
+  @if (isMobile) {
   <app-nav-mobile></app-nav-mobile>
+  } @else {
+  <app-nav-desktop></app-nav-desktop>
+  }
   <router-outlet> </router-outlet>
 </body>

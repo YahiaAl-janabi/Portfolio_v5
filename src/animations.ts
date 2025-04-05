@@ -20,6 +20,13 @@ export const logoColorAnimation = trigger("logoColorAnimation", [
   transition("open => closed", [animate("200ms ease-in-out")]),
 ]);
 
+export const clipLogoAnimation = trigger("clipLogoAnimation", [
+  state("closed", style({ opacity: 1 })),
+  state("open", style({ clipPath: "inset(0 70% 0 0)", opacity: 1 })),
+  transition("closed => open", [animate("5s ease-in-out")]),
+  transition("open => closed", [animate("4s ease-in-out")]),
+]);
+
 export const menuAnimation = trigger("menuAnimation", [
   state("closed", style({ opacity: 0, transform: "translateY(-1000px)" })),
   state("open", style({ opacity: 1, transform: "translateY(0)" })),
